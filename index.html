@@ -12,9 +12,10 @@
     <div class="container">
         <h1>Calculator</h1>
             <hr>
-        <input class="textValue" type="text" onkeypress="validate(event)" id="num1" placeholder="number 1">
+            <!-- Finds all characters NOT between the brackets (0-9 and one .) and search through everything globally. Replace everything else, zero or more. -->
+        <input class="textValue" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="num1" placeholder="number 1">
             <br /> 
-        <input class="textValue" type="text" onkeypress="validate(event)" id="num2" placeholder="number 2">
+        <input class="textValue" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="num2" placeholder="number 2">
             <br />
             <div class="buttonDiv">
                 <button class="buttonClass fa-solid fa-plus" id="calcBtnAdd"></button>
