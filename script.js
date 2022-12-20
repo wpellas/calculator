@@ -8,6 +8,7 @@ let result = document.getElementById("result");
 //     }
 // }
 
+// advanced function
 // let calcPlus = () => {result.value = +num1 + +num2;};
 
 function calculatePlus() {
@@ -31,14 +32,9 @@ function calculateReset() {
     num1.value = "",
     num2.value = ""
 }
-// function calculatePercent() {
-//     result.value =
-//     +num1.value % +num2.value;
-// }
 
 document.getElementById("calcBtnAdd").addEventListener('click', calculatePlus);
 document.getElementById("calcBtnMin").addEventListener('click', calculateMinus);
 document.getElementById("calcBtnMul").addEventListener('click', calculateMultiply);
 document.getElementById("calcBtnDiv").addEventListener('click', calculateDivide);
 document.getElementById("calcBtnReset").addEventListener('click', calculateReset);
-// document.getElementById("calcBtnPrc").addEventListener('click', calculatePercent);
