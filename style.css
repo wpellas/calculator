@@ -6,7 +6,6 @@
     color: whitesmoke;
     border-style: none;
 }
-
 .container {
     margin: 0 auto;
     text-align: center;
@@ -21,8 +20,9 @@
     background-color: #2b2828;
 }
 .container > hr {
-    width: 20rem;
+    width: 17rem;
     margin: 1rem auto 1rem auto;
+    border: 1px solid #9b9d92;
 }
 .textValue {
     background-color: #323635;
