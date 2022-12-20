@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    background-color: #1a1919;
     color: whitesmoke;
     border-style: none;
 }
@@ -13,18 +14,18 @@
     width: 25rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #C4EEF2;
+    background-color: #2b2828;
     border-radius: .5rem;
 }
 .container > h1 {
-    color: #5E88BF;
+    background-color: #2b2828;
 }
 .container > hr {
     width: 20rem;
     margin: 1rem auto 1rem auto;
 }
 .textValue {
-    background-color: #537BC3;
+    background-color: #323635;
     text-align: center;
     width: 15rem;
     height: 2rem;
@@ -33,7 +34,7 @@
     border-radius: .2rem;
 }
 .textResult {
-    background-color: #537BC3;
+    background-color: #323635;
     text-align: center;
     width: 15rem;
     height: 3rem;
@@ -44,12 +45,13 @@
 .buttonDiv {
     margin: 0 auto;
     width: 15rem;
+    background-color: #2b2828;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: space-between;
 }
 .buttonClass {
-    background-color: #537BC3;   
+    background-color: #323635;   
     width: 2.7rem;
     height: 2.7rem;
     transition-duration: all 0.3s;
@@ -57,11 +59,20 @@
     border-radius: .2rem;
 }
 .buttonClass:hover {
-    background-color: #73B2D9;
+    background-color: #03A678;
     transform: scale(1.03);
 }
 .buttonClass:focus {
-    background-color: #8BCAD9;
+    background-color: #8c9694;
     transform: scale(0.9);
     transition-duration: 0.3s;
+}
+#calcBtnReset {
+    background-color: #fd2a35;
+}
+#calcBtnReset:hover {
+    background-color: #f64e56;
+}
+#calcBtnReset:focus {
+    background-color: #ad3137;
 }
