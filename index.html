@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5a6823260c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
@@ -11,16 +12,16 @@
     <div class="container">
         <h1>Calculator</h1>
             <hr>
-        <input class="textValue" type="text" id="num1" placeholder="number 1">
+        <input class="textValue" type="text" onkeypress="validate(event)" id="num1" placeholder="number 1">
             <br /> 
-        <input class="textValue" type="text" id="num2" placeholder="number 2">
+        <input class="textValue" type="text" onkeypress="validate(event)" id="num2" placeholder="number 2">
             <br />
             <div class="buttonDiv">
-                <input class="buttonClass" type="button" id="calcBtnAdd" value="+">
-                <input class="buttonClass" type="button" id="calcBtnMin" value="-">
-                <input class="buttonClass" type="button" id="calcBtnMul" value="*">
-                <input class="buttonClass" type="button" id="calcBtnDiv" value="/">
-                <input class="buttonClass" type="button" id="calcBtnReset" value="C">
+                <button class="buttonClass fa-solid fa-plus" id="calcBtnAdd"></button>
+                <button class="buttonClass fa-solid fa-minus" id="calcBtnMin"></button>
+                <button class="buttonClass fa-solid fa-xmark" id="calcBtnMul"></button>
+                <button class="buttonClass fa-solid fa-divide" id="calcBtnDiv"></button>
+                <button class="buttonClass fa-solid fa-c" id="calcBtnReset"></button>
             </div>
         <input class="textResult" type="text" id="result" placeholder="result" readonly>
         <!-- <input class="buttonClass" type="button" id="calcBtnPrc" value="%"> -->

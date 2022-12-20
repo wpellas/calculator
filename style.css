@@ -30,8 +30,8 @@
     width: 15rem;
     height: 2rem;
     font-size: 1.3rem;
-    margin: 0.3rem;
     border-radius: .2rem;
+    margin-bottom: 0.3rem;
 }
 .textResult {
     background-color: #323635;
