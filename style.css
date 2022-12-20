@@ -76,3 +76,20 @@
 #calcBtnReset:focus {
     background-color: #ad3137;
 }
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #2b2828;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+footer > a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    background-color: #2b2828;
+}
+footer > a > i {
+    background-color: #2b2828;
+}
