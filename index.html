@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5a6823260c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Calculator</h1>
-            <hr>
-            <!-- Finds all characters NOT between the brackets (0-9 and one .) and search through everything globally. Replace everything else, zero or more. ..* indicates EVERYTHING. ? = zero or one occurence, * = zero or more.  -->
-        <input class="textValue" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="num1" placeholder="number 1">
-            <br /> 
-        <input class="textValue" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="num2" placeholder="number 2">
-            <br />
-            <div class="buttonDiv">
-                <button class="buttonClass fa-solid fa-plus" id="calcBtnAdd"></button>
-                <button class="buttonClass fa-solid fa-minus" id="calcBtnMin"></button>
-                <button class="buttonClass fa-solid fa-xmark" id="calcBtnMul"></button>
-                <button class="buttonClass fa-solid fa-divide" id="calcBtnDiv"></button>
-                <button class="buttonClass fa-solid fa-c" id="calcBtnReset"></button>
+    <header class="footbot header"><a class="headerLink" href="https://williampellas.com">arithmetic calculator</a></header>
+    <section>
+        <div class="container">
+            <div id="display"></div>
+            <div class="buttons">
+                <div id="clear" class="button">C</div>
+                <div class="button method">/</div>
+                <div class="button method">*</div>
+                <div class="button method">&larr;</div>
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button method">-</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button method">+</div>
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button method">.</div>
+                <div class="button method">(</div>
+                <div class="button">0</div>
+                <div class="button method">)</div>
+                <div id="equal" class="button">=</div>
             </div>
-        <input class="textResult" type="text" id="result" placeholder="result" readonly>
-        <!-- <input class="buttonClass" type="button" id="calcBtnPrc" value="%"> -->
-    </div>
-    <footer>
-        <a  href="https://github.com/Kimoris">made by william pellas <i class="fa-brands fa-github"></i></a>
-    </footer>
+        </div>
+    </section>
+    <footer class="footbot footer"><a class="headerLink" href="https://williampellas.com">made by william pellas</a></footer>
     <script src="script.js"></script>
 </body>
 </html>
