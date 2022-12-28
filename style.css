@@ -37,7 +37,6 @@ body {
         #666262 100%
     );
 }
-
 #display {
     text-align: right;
     height: 4rem;
@@ -49,37 +48,42 @@ body {
     margin-bottom: 2rem;
     color: white;
 }
-
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: .5rem;
 }
-
 .buttons > div {
     border-radius: 1rem;
 }
-
 .button {
     max-height: 6rem;
     max-width: 6rem;
-    background-color: #e0e0e0;
+    background-color: #EDEDED;
     line-height: 6rem;
     text-align: center;
     font-size: 2rem;
     cursor: pointer;
 }
 .button:hover {
-    background-color: #323330;
-    color: white;
+    background-color: #C7C7C7   ;
     transition: 0.2s ease-in-out;
 }
 .button:active {
+    background-color: #A1A1A1;
     transform: scale(0.9);
     transition-duration: 0.1s;
+    color: #EDEDED;
 }
 .method {
-    background-color: #bbbbbb;
+    background-color: #C7C7C7;
+}
+.method:hover {
+    background-color: #EDEDED;
+}
+.method:active {
+    background-color: #A1A1A1;
+    color: #EDEDED;
 }
 #clear {
     background-color: #FA6A62;
