@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.nonselect {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
 .footbot {
     position: fixed;
     height: 3vh;
