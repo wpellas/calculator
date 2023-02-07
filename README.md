@@ -1,4 +1,7 @@
-# calculator
-calculator that calculates things
+# What is this?
 
-have a look over at https://wpellas.github.io/calculator/
+An arithmetic calculator that calculates things!
+
+### Can I try it?
+
+https://williampellas.com/calculator/
